@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="46855c62-325f-4d69-bc0c-cae0cfb01cf8">
+	<property name="ireport.zoom" value="2.0"/>
+	<property name="ireport.x" value="177"/>
+	<property name="ireport.y" value="672"/>
+	<queryString>
+		<![CDATA[SELECT * FROM fpencapaian;]]>
+	</queryString>
+	<field name="idkaryawan" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="namakaryawan" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="jabatan" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="idjabatan" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pq1" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pq2" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pq3" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pq4" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ppq1" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ppq2" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ppq3" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ppq4" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ap" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cs" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ss" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="506" splitType="Stretch">
+			<staticText>
+				<reportElement x="251" y="380" width="18" height="20" uuid="649f9d79-4bbb-4f51-b130-0adff73d4996"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[%]]></text>
+			</staticText>
+			<line>
+				<reportElement x="222" y="320" width="1" height="80" uuid="74fdb432-564a-4a64-8e11-63e1642bdb90"/>
+			</line>
+			<textField>
+				<reportElement x="162" y="253" width="100" height="20" uuid="ee0826cf-4b24-49b4-89e8-8fce3d874493"/>
+				<textFieldExpression><![CDATA[$F{jabatan}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="131" y="139" width="330" height="34" uuid="f9266bd2-8760-4702-b0c8-e5c2865ea696"/>
+				<textElement textAlignment="Center">
+					<font size="16" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Surat Pengajuan Kenaikan Gaji Karyawan]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="68" y="380" width="144" height="20" uuid="8f4dced2-437b-4644-bfe7-6c323820e5b9"/>
+				<textFieldExpression><![CDATA[$F{pq4}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="162" y="193" width="100" height="20" uuid="0cd536fe-b4cd-4576-a8b5-b5b871f57be7"/>
+				<textFieldExpression><![CDATA[$F{idkaryawan}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="233" y="380" width="18" height="20" uuid="c0a13b6a-e2ab-4dc2-9750-8f890e78406f"/>
+				<textFieldExpression><![CDATA[$F{ppq4}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="204" y="461" width="209" height="20" uuid="6939e475-ecad-4a5a-8a3c-c65459f37818"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{ss}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="131" y="441" width="187" height="20" uuid="d8eda288-1750-4894-8f04-8e0dcebfb1d2"/>
+				<textFieldExpression><![CDATA[$F{cs}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="32" y="320" width="36" height="20" uuid="66ec3f59-5e8f-4efd-a4ba-bf4dd958979f"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Q1]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="182" y="400" width="41" height="20" uuid="5d43e6e1-4f26-408a-ad98-d199e32b9f41"/>
+				<textFieldExpression><![CDATA[$F{ap}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="32" y="360" width="36" height="20" uuid="01631ce4-0fc4-4ab9-bf36-1a11cdebb081"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Q3]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="162" y="233" width="100" height="20" uuid="1e1fd2db-52ba-4b5b-b3db-01402d79c915"/>
+				<textFieldExpression><![CDATA[$F{idjabatan}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="251" y="340" width="18" height="20" uuid="658309ed-8029-4a09-8ef6-97a4e6522ec0"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[%]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="174" y="48" width="213" height="20" uuid="3d299372-8e4f-492d-9f42-f60d5621a2e0"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Jl. Bendungan Hillir Raya Jakarta Pusat]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="32" y="213" width="131" height="20" uuid="74dc7918-6aee-466a-a75e-ecf01cb629d9"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Nama Karyawan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="30" y="441" width="100" height="20" uuid="83046d76-986d-4a8b-b5d3-a45b9afdb1c1"/>
+				<text><![CDATA[Current Salary    Rp.]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="163" y="213" width="100" height="20" uuid="06201bb6-9e8c-4b48-8c57-74707311162c"/>
+				<textFieldExpression><![CDATA[$F{namakaryawan}]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement x="24" y="10" width="107" height="88" uuid="0371977f-2cd4-4a15-a911-a08b0abdda33"/>
+				<imageExpression><![CDATA["C:\\Users\\L - Arch\\Documents\\Unindra\\Smester 6\\Pemrograman Visual\\NetBeansProjects\\XGDSS\\src\\DSS\\image\\Group.jpg"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="32" y="340" width="36" height="20" uuid="ab731e7d-ebc6-48ba-b0a1-ca413451388b"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Q2]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="31" y="253" width="131" height="20" uuid="552c4e40-cf65-4621-9155-176233166648"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Jabatan]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="68" y="340" width="144" height="20" uuid="f47fc8b5-9e2e-49ad-b5f7-d5d85420fe68"/>
+				<textFieldExpression><![CDATA[$F{pq2}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="68" y="400" width="114" height="20" uuid="ca8c6c81-0c3c-41f8-b197-105798e356b0"/>
+				<text><![CDATA[Average Percentage :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="32" y="193" width="131" height="20" uuid="3c07f165-09e2-4eed-aa6e-b16e39a72eef"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[NIK Karyawan]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="233" y="320" width="18" height="20" uuid="1119d171-788c-4b5d-9d93-6a5c425c848d"/>
+				<textFieldExpression><![CDATA[$F{ppq1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="68" y="360" width="144" height="20" uuid="2f96719c-36b3-4776-a2c7-7d901a29c520"/>
+				<textFieldExpression><![CDATA[$F{pq3}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="32" y="287" width="150" height="20" uuid="6842e819-35cc-4862-ae55-4c5aac10d2e0"/>
+				<textElement>
+					<font size="14" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Pencapaian Karyawan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="155" y="21" width="266" height="27" uuid="20b8840d-b732-4d4e-9280-a7be5c9a4d4c"/>
+				<textElement>
+					<font size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PT XEROGRAPHY INDONESIA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="251" y="320" width="18" height="20" uuid="7bae32cd-ad63-4e89-a55d-5b9cfebe9797"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[%]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="251" y="360" width="18" height="20" uuid="d9bbb0c2-5239-4528-ac8d-3be84e6050f2"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[%]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="31" y="461" width="173" height="20" uuid="94e12edb-6b52-4bcc-8f51-1b2d7f3758f1"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Submission Salary  Rp.]]></text>
+			</staticText>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement x="421" y="98" width="100" height="20" uuid="4d6c037e-087d-42cc-887b-b454f2b7b3c2"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="233" y="340" width="18" height="20" uuid="660e4112-b304-4423-9bb8-b54dd3281699"/>
+				<textFieldExpression><![CDATA[$F{ppq2}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="31" y="233" width="131" height="20" uuid="bf4be0cf-d7c4-4957-8894-ced5e5c2d159"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[ID Jabatan]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="233" y="360" width="18" height="20" uuid="e5baf9ff-d630-41d3-a5ab-627686806565"/>
+				<textFieldExpression><![CDATA[$F{ppq3}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="222" y="400" width="18" height="20" uuid="63199329-1e8d-486e-a38d-5a140f9df3bc"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[%]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="68" y="320" width="144" height="20" uuid="db70e584-6274-4017-b421-717343144ae2"/>
+				<textFieldExpression><![CDATA[$F{pq1}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="32" y="380" width="36" height="20" uuid="33e459d5-082b-4e14-999f-4231b05ddd1a"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Q4]]></text>
+			</staticText>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="28"/>
+	</pageFooter>
+</jasperReport>
